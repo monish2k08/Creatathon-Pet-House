@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PetHouse – Adopt Love ❤️</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css" rel="stylesheet">
+</head>
+
+<body>
+<div class="paw-loader" id="pawLoader">🐾</div>
+<!-- NAVBAR -->
+<nav class="navbar glass">
+  <h1 class="logo">🐾 PetHouse</h1>
+
+  <div class="nav-buttons">
+    <button id="darkToggle" class="icon-btn"><i class="ri-moon-fill"></i></button>
+    <button class="icon-btn"><i class="ri-heart-fill"></i></button>
+  </div>
+</nav>
+
+
+<!-- SEARCH & FILTER BAR -->
+<section class="search-section glass">
+  <input type="text" id="searchInput" placeholder="Search pets by name…">
+  
+  <select id="typeFilter">
+    <option value="all">All Types</option>
+    <option value="dog">Dogs</option>
+    <option value="cat">Cats</option>
+    <option value="rabbit">Rabbits</option>
+  </select>
+
+  <select id="ageFilter">
+    <option value="all">All Ages</option>
+    <option value="young">Young</option>
+    <option value="adult">Adult</option>
+  </select>
+
+  <select id="genderFilter">
+    <option value="all">Any Gender</option>
+    <option value="male">Male</option>
+    <option value="female">Female</option>
+  </select>
+</section>
+
+<!-- PET GRID -->
+<div class="pet-grid" id="petContainer"></div>
+
+<!-- PET PREVIEW MODAL -->
+<div id="petModal" class="modal">
+  <div class="modal-content glass">
+    <span id="closeModal">&times;</span>
+
+    <img id="modalImg" class="modal-img" src="">
+    <video id="modalVideo" class="modal-video" controls style="display:none"></video>
+
+    <h2 id="modalName"></h2>
+    <p id="modalInfo"></p>
+
+    <button id="adoptBtn" class="adopt-btn">Adopt Me ❤️</button>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

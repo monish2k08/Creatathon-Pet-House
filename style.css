@@ -1,0 +1,128 @@
+/* ---------- Root Themes ---------- */
+:root {
+    --bg: #f7f7f7;
+    --text: #222;
+    --card: #fff;
+    --accent: #ff914d;
+}
+
+body.dark {
+    --bg: #181818;
+    --text: #fff;
+    --card: #222;
+    --accent: #ffa860;
+}
+
+body {
+    margin: 0;
+    font-family: Poppins, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    transition: 0.3s ease;
+}
+
+/* ---------- Header ---------- */
+header {
+    background: var(--accent);
+    color: white;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#themeBtn {
+    background: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+/* ---------- Video Section ---------- */
+.video-section {
+    text-align: center;
+    padding: 20px;
+}
+video {
+    width: 90%;
+    max-width: 400px;
+    border-radius: 15px;
+}
+
+/* ---------- Filters ---------- */
+.filters {
+    text-align: center;
+    padding: 20px;
+}
+.filters select, .filters button {
+    padding: 10px;
+    margin: 5px;
+    border-radius: 10px;
+    border: none;
+    font-size: 16px;
+}
+
+.filters button {
+    background: var(--accent);
+    color: white;
+    cursor: pointer;
+}
+
+/* ---------- Pets Grid ---------- */
+.pets-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.pet {
+    background: var(--card);
+    padding: 15px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 4px 10px #0002;
+    transition: transform 0.2s;
+}
+.pet:hover {
+    transform: translateY(-5px);
+}
+
+.pet img {
+    width: 100%;
+    border-radius: 12px;
+    height: 150px;
+    object-fit: cover;
+}
+
+/* ---------- Form ---------- */
+.form-section {
+    padding: 20px;
+    text-align: center;
+}
+
+form {
+    background: var(--card);
+    padding: 20px;
+    margin: auto;
+    width: 95%;
+    max-width: 400px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 10px #0002;
+}
+
+form input, textarea, button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 10px;
+    border: none;
+}
+
+button {
+    background: var(--accent);
+    color: white;
+    cursor: pointer;
+}

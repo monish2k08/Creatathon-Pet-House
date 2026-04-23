@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PetHouse – Adopt a Friend</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>🐾 PetHouse</h1>
+    <button id="themeBtn">🌙</button>
+</header>
+
+<section class="video-section">
+    <h2>Welcome to PetHouse</h2>
+    <video controls>
+        <source src="media/promo.mp4" type="video/mp4">
+    </video>
+</section>
+
+<section class="filters">
+    <h2>Find Your Perfect Pet</h2>
+
+    <select id="typeFilter">
+        <option value="all">All Types</option>
+        <option value="dog">Dogs</option>
+        <option value="cat">Cats</option>
+        <option value="rabbit">Rabbits</option>
+        <option value="bird">Birds</option>
+    </select>
+
+    <select id="ageFilter">
+        <option value="all">All Ages</option>
+        <option value="1">1 Year</option>
+        <option value="2">2 Years</option>
+        <option value="3">3+ Years</option>
+    </select>
+
+    <button onclick="applyFilters()">Apply Filters</button>
+</section>
+
+<section id="pets" class="pets-container">
+
+    <div class="pet" data-type="dog" data-age="1">
+        <img src="media/dog1.jpg">
+        <h3>Rocky</h3>
+        <p>Age: 1</p>
+    </div>
+
+    <div class="pet" data-type="cat" data-age="2">
+        <img src="media/cat1.jpg">
+        <h3>Mittens</h3>
+        <p>Age: 2</p>
+    </div>
+
+    <div class="pet" data-type="rabbit" data-age="3">
+        <img src="media/rabbit1.jpg">
+        <h3>Snowy</h3>
+        <p>Age: 3</p>
+    </div>
+
+    <div class="pet" data-type="bird" data-age="1">
+        <img src="media/bird1.jpg">
+        <h3>Kiwi</h3>
+        <p>Age: 1</p>
+    </div>
+
+    <div class="pet" data-type="dog" data-age="3">
+        <img src="media/dog2.jpg">
+        <h3>Bruno</h3>
+        <p>Age: 3</p>
+    </div>
+
+</section>
+
+<section class="form-section">
+    <h2>Adoption Form</h2>
+    
+    <form id="adoptForm">
+        <label>Your Name</label>
+        <input type="text" id="name" required>
+
+        <label>Your Email</label>
+        <input type="email" id="email" required>
+
+        <label>Pet Name</label>
+        <input type="text" id="petName" required>
+
+        <label>Why do you want to adopt?</label>
+        <textarea id="reason" rows="3" required></textarea>
+
+        <button type="submit">Submit</button>
+    </form>
+
+    <p id="formMsg"></p>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
